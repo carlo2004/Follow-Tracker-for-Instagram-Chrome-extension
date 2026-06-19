@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Follow Tracker for Instagram",
+  "version": "1.1.0",
+  "description": "See who doesn't follow you back on Instagram, whitelist accounts you want to keep, and unfollow with one click. Your data stays on your device.",
+  "permissions": [
+    "storage",
+    "unlimitedStorage",
+    "cookies",
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.instagram.com/*",
+    "https://*.cdninstagram.com/*",
+    "https://*.fbcdn.net/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Follow Tracker for Instagram"
+  }
+}

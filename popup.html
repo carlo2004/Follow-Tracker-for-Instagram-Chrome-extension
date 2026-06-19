@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="popup.css" />
+  <title>Follow Tracker</title>
+</head>
+<body>
+  <header class="hdr">
+    <div class="title">Follow Tracker <span>for Instagram</span></div>
+    <div class="last" id="last-scan">Last scan: never</div>
+  </header>
+
+  <section class="scanbar">
+    <button id="scan-btn" class="btn primary big">Scan now</button>
+    <button id="cancel-btn" class="btn danger" style="display:none">Cancel</button>
+  </section>
+  <div id="progress" class="progress" style="display:none"></div>
+
+  <section class="stats">
+    <div class="stat">
+      <div class="num" id="stat-following">&mdash;</div>
+      <div class="lbl">Following</div>
+    </div>
+    <div class="stat">
+      <div class="num" id="stat-followers">&mdash;</div>
+      <div class="lbl">Followers</div>
+    </div>
+    <div class="stat">
+      <div class="num" id="stat-nonfollowers">&mdash;</div>
+      <div class="lbl">Don't follow back</div>
+    </div>
+    <div class="stat">
+      <div class="num" id="stat-whitelist">0</div>
+      <div class="lbl">Whitelisted</div>
+    </div>
+  </section>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="nonfollowers">Doesn't follow back</button>
+    <button class="tab" data-tab="fans">Fans</button>
+    <button class="tab" data-tab="whitelist">Whitelist</button>
+  </nav>
+
+  <div class="toolbar">
+    <input id="search" type="search" placeholder="Search username or name&hellip;" />
+    <button id="stats-btn" class="btn ghost" title="Load follower/following counts for the visible list (max 25)">Stats</button>
+    <button id="export-btn" class="btn ghost" title="Export the current list to CSV">Export</button>
+  </div>
+
+  <main id="list" class="list"></main>
+
+  <footer class="foot">
+    All follower data stays on your device. Built for personal use &mdash; see the README about Instagram's rate limits &amp; Terms.
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
