@@ -27,6 +27,7 @@ Everything runs locally in your browser. Your follower/following lists never lea
 | `popup.html` | The dashboard UI. |
 | `popup.css` | Styling. |
 | `popup.js` | UI logic: scans, list rendering, profile pictures, whitelist, stats, one-click unfollow, and CSV export. |
+| `icon16.png`, `icon48.png`, `icon128.png` | Toolbar / extension icons (kept in the same folder as `manifest.json`). |
 
 ---
 
@@ -38,7 +39,7 @@ This is an **unpacked** extension, so you load it directly — no Chrome Web Sto
 2. Open Chrome and go to `chrome://extensions`.
 3. Turn on **Developer mode** (top-right toggle).
 4. Click **Load unpacked** and select the folder containing `manifest.json`.
-5. Open the puzzle-piece menu in your toolbar and pin **Follow Tracker** for easy access. (The extension uses Chrome's default icon.)
+5. Open the puzzle-piece menu in your toolbar and pin **Follow Tracker** for easy access.
 
 Works in any Chromium browser that supports MV3: Chrome, Edge, Brave, Arc, Opera.
 
