@@ -4,6 +4,8 @@ A Chrome (Manifest V3) extension that shows **who doesn't follow you back** on I
 
 Everything runs locally in your browser. Your follower/following lists never leave your device — there is no server, no account, no third-party login.
 
+![Follow Tracker for Instagram in action — the popup listing accounts that don't follow you back](screenshot.png)
+
 ---
 
 ## What it does
@@ -28,6 +30,7 @@ Everything runs locally in your browser. Your follower/following lists never lea
 | `popup.css` | Styling. |
 | `popup.js` | UI logic: scans, list rendering, profile pictures, whitelist, stats, one-click unfollow, and CSV export. |
 | `icon16.png`, `icon48.png`, `icon128.png` | Toolbar / extension icons (kept in the same folder as `manifest.json`). |
+| `screenshot.png` | Screenshot shown at the top of this README. |
 
 ---
 
